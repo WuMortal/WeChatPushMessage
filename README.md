@@ -1,18 +1,18 @@
 # DotNET Core 实现微信公众号关注推送消息
 
-# 实现思路
+## 实现思路
 ![实现思路](/doc/images/4.png)
 
-# 使用
+## 使用
 
-## 服务器配置
+### 服务器配置
 首先你需要在「微信公众平台」中配置你的服务器信息，「开发」-> 「基本配置」->「服务器配置」。`URL` 需要填你的域名但后面需要加上 `WeChat`，例如 `http://wigor.club/WeChat`，Token 你自己随便填，后面程序的 `appsettings.json` 文件中需要填写，`EncodingAESKey` 点击随机生成即可。先不要点击保存，因为你的服务还没起来，点了保存也是报错。
 
 > * 一开始你就需要将你的域名/IP加入到白名单中
 
 ![服务器配置](/doc/images/1.png)
 
-## 项目配置
+### 项目配置
 接着将服务跑起来，将项目下载到你本地
 
 > git clone git@github.com:WuMortal/WeChatPushMessage.git
