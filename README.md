@@ -1,12 +1,18 @@
 # DotNET Core 实现微信公众号关注推送消息
 
-## 使用
+# 实现思路
+![实现思路](/doc/images/4.png)
+
+# 使用
+
+## 服务器配置
 首先你需要在「微信公众平台」中配置你的服务器信息，「开发」-> 「基本配置」->「服务器配置」。`URL` 需要填你的域名但后面需要加上 `WeChat`，例如 `http://wigor.club/WeChat`，Token 你自己随便填，后面程序的 `appsettings.json` 文件中需要填写，`EncodingAESKey` 点击随机生成即可。先不要点击保存，因为你的服务还没起来，点了保存也是报错。
 
 > * 一开始你就需要将你的域名/IP加入到白名单中
 
 ![服务器配置](/doc/images/1.png)
 
+## 项目配置
 接着将服务跑起来，将项目下载到你本地
 
 > git clone git@github.com:WuMortal/WeChatPushMessage.git
@@ -20,7 +26,9 @@
 Appid 和 Secret 在 微信公众平台中同样可以找到。
 
 在这里说明下，这里提供的功能是发送素材到你的公众号。所以配置了一个 `SendMediaId`，通过 `SendMediaId` 去获取需要发送的图文信息。如果你们想做可以选择素材的效果，可以直接在此项目上修改，这边我提供相关的文档地址：
+
 > 获取素材列表：[https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738734](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738734)
+
 > 获取永久素材（指定 素材ID）：[https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738730](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738730)
 
 素材ID 获取的方式可以直接调用 「获取素材列表」的接口，步骤1.获取 access_token，2.获取素材列表，3.选择自身需要的 素材ID（media_id）。
