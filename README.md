@@ -5,7 +5,7 @@
 
 注意使用自己的服务器后「自定义菜单」可能无效，需要你在后台完成这个功能，暂时用的话可以直接调用微信的接口创建菜单。
 
-接口文档:[https://developers.weixin.qq.com/doc/offiaccount/Custom_Menus/Creating_Custom-Defined_Menu.html](https://developers.weixin.qq.com/doc/offiaccount/Custom_Menus/Creating_Custom-Defined_Menu.html)
+接口文档：[https://developers.weixin.qq.com/doc/offiaccount/Custom_Menus/Creating_Custom-Defined_Menu.html](https://developers.weixin.qq.com/doc/offiaccount/Custom_Menus/Creating_Custom-Defined_Menu.html)
 
 ## 使用
 
